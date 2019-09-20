@@ -14,6 +14,7 @@ import { AuthorsComponent } from './pages/settings/authors/authors.component';
 import { AreasComponent } from './pages/settings/areas/areas.component';
 import { SectionsComponent } from './pages/settings/sections/sections.component';
 import { BooksComponent } from './pages/settings/books/books.component';
+// aqui elimine la inportasion porque no se puede inportar entodo los modulos como app.module.ts y el module del componete nuevo 
 
 @NgModule({
   declarations: [

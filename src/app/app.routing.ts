@@ -42,6 +42,9 @@ export const routes: Routes=[{
         },{
             path  : 'books',    
             component : BooksComponent
+        }, {
+            path: '',
+            loadChildren:'./pages/hello-w/hello-w.module#HelloWModule'
         }
     ]
 
