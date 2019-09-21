@@ -16,7 +16,7 @@ export const routes: Routes=[{
 },
 {
     path: 'pages',
-    component: ThemeComponent,
+    component: ThemeComponent,// sellama el componente del tema
     children: [
         {
             path: 'dashboard',
@@ -45,6 +45,10 @@ export const routes: Routes=[{
         }, {
             path: '',
             loadChildren:'./pages/hello-w/hello-w.module#HelloWModule'
+        },{
+            path: '',
+            loadChildren:'./pages/hola/hola.module#HolaModule'
+            //se copia y se cambia el path se le cambi ala ruta  la primera parte va la ruta la segunada parte va el conponente del module nuevo
         }
     ]
 
