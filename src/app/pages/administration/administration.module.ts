@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UsersComponent } from './users/users.component';
-import { RolesComponent } from './roles/roles.component';
 
+import { AdministrationRoutingModule } from './administration-routing.module';
+import { RolesComponent } from './roles/roles.component';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
-  declarations: [UsersComponent, RolesComponent],
+  declarations: [RolesComponent,UsersComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    AdministrationRoutingModule
   ]
 })
 export class AdministrationModule { }
